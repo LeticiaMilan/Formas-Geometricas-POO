@@ -18,6 +18,12 @@ public class App {
         retangulo.calcularArea();
         retangulo.calcularPerimetro();
 
+        System.out.print("Digite o lado do quadrado: ");
+        double lado = scanner.nextDouble();
+        Quadrado quadrado = new Quadrado(lado);
+        quadrado.calcularArea();
+        quadrado.calcularPerimetro();
+
         System.out.print("Digite a base do triângulo: ");
         base = scanner.nextDouble();
         System.out.print("Digite a altura do triângulo: ");
