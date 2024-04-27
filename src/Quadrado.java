@@ -1,11 +1,23 @@
 import interfaces.Forma;
 
-public class Quadrado implements Forma{
+public class Quadrado implements Forma {
     private double lado;
 
     public Quadrado(double lado) {
         if (lado <= 0) {
             System.out.println("O lado do quadrado deve ser um valor positivo e não nulo.");
+        }
+        this.lado = lado;
+    }
+
+    public double getLado() {
+        return lado;
+    }
+
+    public void setLado(double lado) {
+        if (lado <= 0) {
+            System.out.println("O lado do quadrado deve ser um valor positivo e não nulo.");
+            return;
         }
         this.lado = lado;
     }

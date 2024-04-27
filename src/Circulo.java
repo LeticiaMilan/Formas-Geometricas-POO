@@ -10,6 +10,18 @@ public class Circulo implements Forma {
         this.raio = raio;
     }
 
+    public double getRaio() {
+        return raio;
+    }
+    
+    public void setRaio(double raio) {
+        if (raio <= 0) {
+            System.out.println("O raio do círculo deve ser um valor positivo e não nulo.");
+            return;
+        }
+        this.raio = raio;
+    }
+
     @Override
     public void calcularArea() {
         double area = Math.PI * Math.pow(this.raio, 2);
